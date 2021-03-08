@@ -1,4 +1,4 @@
-# Password-Manager-Generator
+# Password-Manager and Generator
 Manage and Generate passwords
 # Requirements:
 - Pyperclip
