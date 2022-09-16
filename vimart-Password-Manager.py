@@ -1,7 +1,12 @@
+from tkinter import *
+from tkinter import Tk
+from tkinter import ttk
 import pyperclip
 from cryptography.fernet import Fernet
 import os
 import webbrowser
+import random
+import string
 
 backg = '#06090f'
 
@@ -49,10 +54,10 @@ def pasw():
 
     if long > 8:
         how = long - 8
-        print('how', how)
+        #print('how', how)
         for x in range(how):
             password.append(random.choice(string.ascii_lowercase))
-    print('lista', password)
+    #print('lista', password)
     random.shuffle(password)
     made = ''.join(password)
     password_entry.delete(0, END)
@@ -62,7 +67,7 @@ def pasw():
 def callbackfunc(n):
     m = n.widget.get()
     choice_n.set(m)
-    print('choice_set_get:', choice_n.get())
+   # print('choice_set_get:', choice_n.get())
 
 
 def copy_entry():
